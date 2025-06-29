@@ -13,6 +13,12 @@
 
 ---
 
+## 📌 Introduction
+
+A critical vulnerability was discovered in the **PHP Gurukul - Online Notes Sharing System**, a web application designed to manage and share academic notes among students and faculty. The vulnerability affects the session management logic handled via cookies and specifically targets the `sessionid` cookie used during authentication and user tracking.
+
+The flaw allows attackers to perform **XPath Injection** by supplying specially crafted values in the `sessionid` cookie. Due to improper neutralization of input within XPath expressions, the application becomes vulnerable to logic manipulation, authentication bypass, and potential data extraction from the backend XML data store (e.g., usernames, passwords).
+
 ## 🗂️ Vulnerability Summary
 
 | Field             | Details                                                |
